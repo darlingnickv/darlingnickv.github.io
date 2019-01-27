@@ -7,17 +7,17 @@ $(document).ready(function() {
  //With the image cat of that image appearing first
  $(".cityFirst").on("click", function() {
    console.log(" City Image was clicked!!!");
-   location.replace("cityFirst.html");
+   window.location.href = "cityFirst.html";
  });
 
  $(".personFirst").on("click", function() {
   console.log(" Person Image was clicked!!!");
-  location.replace("personFirst.html");
+  window.location.href = "personFirst.html";
 });
 
 $(".natureFirst").on("click", function() {
   console.log(" Nature Image was clicked!!!");
-  location.replace("natureFirst.html");
+  window.location.href = "natureFirst.html";
 });
 
 //When user clicks on a specific photo in photo grid, they are routed back to the slides page of that cat.
@@ -27,7 +27,7 @@ $(".citySlides").on("click", function() {
   console.log("City image was clicked from photo grid!");
   var clickedImgStr = this.id.replace("pic", "");
   var clickedImgNum = parseInt(clickedImgStr);
-  location.replace("citySlides.html?img=" + clickedImgNum);
+  window.location.href = "citySlides.html?img=" + clickedImgNum;
  // console.log(this.id.replace("pic", ""));
 
 
@@ -41,13 +41,13 @@ $(".personSlides").on("click", function() {
   var clickedImgPersonStr = this.id.replace("pic", "");
   var clickedImgPersonNum = parseInt(clickedImgPersonStr);
   //console.log("image id : " + this.id);
-  location.replace("personSlides.html?img=" + clickedImgPersonNum);
+  window.location.href = "personSlides.html?img=" + clickedImgPersonNum;
 });
 $(".natureSlides").on("click", function() {
   var clickedImgNatureStr = this.id.replace("pic", "");
   var clickedImgNatureNum = parseInt(clickedImgNatureStr);
   console.log("Nature image was clicked from photo grid!");
-  location.replace("natureSlides.html?img=" + clickedImgNatureNum);
+  window.location.href = "natureSlides.html?img=" + clickedImgNatureNum;
 });
 
 });
