@@ -1,0 +1,88 @@
+a {
+    color: black;
+}
+a:hover {
+      color: black;
+      text-decoration: none;
+  }
+ 
+  ul {
+    padding: 5px;
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    list-style-type: none;
+}
+li {
+    list-style-type: none;
+}
+.listItems {
+    font-size: 17px;
+}
+
+#insta {
+color: black;
+text-decoration: none;
+}
+#email {
+color: black;
+}
+footer{ 
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+#bio {
+color: black;
+}
+
+/*.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center space-around;
+  }*/
+img {
+    padding-bottom: 10px;
+}
+img:hover {
+    transform: scale(1.1);
+}
+.carousel-inner .carousel-item img {
+    margin:0 auto;
+}
+.carousel-control-prev-icon {
+    color: red !important;
+    background-color: red !important;
+
+}
+
+i {
+    color: black !important;
+}
+
+/* selected link */
+/*a:active {
+    color: yellow;
+}
+
+
+a:link {
+    color: green;
+}
+
+
+a:visited {
+    color: green;
+}
+
+
+a:hover {
+    color: red;
+}
+
+
+a:active {
+    color: yellow;
+}
+*/
+
+
+

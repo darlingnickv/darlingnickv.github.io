@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <title>Photo Gallery</title>
+</head>
+<body>
+    <div id="demo" class=" text-center collapse" data-parent="#accordion">
+        <img class="hiddenPerson" src="https://picsum.photos/g/400/500"> <br>
+        <img  class="hiddenPerson" src="https://picsum.photos/g/400/400"> <br>
+        <img  class="hiddenPerson" src="https://picsum.photos/g/500/500"> <br>
+        <img  class="hiddenPerson" src="https://picsum.photos/g/300/600"> <br>
+        <img  class="hiddenPerson" src="https://picsum.photos/g/500/400"> <br>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                   
+                <a href="#demo" data-toggle="collapse" data-target="#demo" aria-expanded="true" aria-controls="collapseOne" class="genre"><h6>City</h6></a>
+            </div>
+            <div class="col-md-4 text-center">
+                <a id="personClick" data-toggle="collapse" data-target="#demo1" aria-expanded="true" aria-controls="collapseOne" class="genre" href="#demo1"><h6>Person</h6></a>
+            </div>
+            <div class="col-md-4 text-center">
+                <a id="natureClick" data-toggle="collapse" data-target="#demo2" aria-expanded="true" aria-controls="collapseOne" class="genre" href="#demo2"><h6>Nature</h6></a>
+            </div>
+        </div>
+        <div id="accordion">
+        <div class="row">
+            <div id="demo" class="col-md-8 text-center collapse" data-parent="#accordion">
+                <img class="hiddenPerson" src="https://picsum.photos/g/400/500"> <br>
+                <img  class="hiddenPerson" src="https://picsum.photos/g/400/400"> <br>
+                <img  class="hiddenPerson" src="https://picsum.photos/g/500/500"> <br>
+                <img  class="hiddenPerson" src="https://picsum.photos/g/300/600"> <br>
+                <img  class="hiddenPerson" src="https://picsum.photos/g/500/400"> <br>
+            </div>
+        </div>
+        <div class="row">
+            <div id="demo1" class="col-md-8 text-center collapse" data-parent="#accordion" >
+                <img class="hiddenCity" src="https://picsum.photos/g/500/600"> <br>
+                <img class="hiddenCity" src="https://picsum.photos/g/500/500"> <br>
+                <img class="hiddenCity" src="https://picsum.photos/g/600/600"> <br>
+                <img class="hiddenCity" src="https://picsum.photos/g/400/700"> <br>
+                <img class="hiddenCity" src="https://picsum.photos/g/600/500"> <br>
+            </div>
+        </div>
+        <div class="row">
+            <div id="demo2" class="col-md-8 text-center collapse" data-parent="#accordion">
+                <img class="hiddenNature" src="https://picsum.photos/g/600/700"> <br>
+                <img class="hiddenNature" src="https://picsum.photos/g/600/600"> <br>
+                <img class="hiddenNature" src="https://picsum.photos/g/700/700"> <br>
+                <img class="hiddenNature" src="https://picsum.photos/g/500/800"> <br>
+                <img class="hiddenNature" src="https://picsum.photos/g/700/600"> <br>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h6 class="sideways"><a href="mailto:nviau93@gmail.com" id="email">Email</a> | <a href="" id="insta">Instagram</a> <a href="bio.html" id="bio"> | Bio</a></h6>
+    </footer>
+    </div>
+    
+
+</body>
+</html>
