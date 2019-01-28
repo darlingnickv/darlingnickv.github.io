@@ -17,7 +17,11 @@ $(document).ready(function() {
 
 $(".natureFirst").on("click", function() {
   console.log(" Nature Image was clicked!!!");
-  window.location.href = "natureFirst.html";
+  console.log(this.id);
+  var idInfo = this.id
+  var importantNumber = idInfo.replace("n", "");
+  console.log(importantNumber);
+  window.location.href = "natureFirst.html?img=" + importantNumber;
 });
 
 //When user clicks on a specific photo in photo grid, they are routed back to the slides page of that cat.
@@ -37,12 +41,14 @@ $(".citySlides").on("click", function() {
  // }
   
 });
-$(".personSlides").on("click", function() {
+
+//These are for when someone clicks an image on the index carousel
+/*$(".personSlides").on("click", function() {
   var clickedImgPersonStr = this.id.replace("pic", "");
   var clickedImgPersonNum = parseInt(clickedImgPersonStr);
   //console.log("image id : " + this.id);
   window.location.href = "personSlides.html?img=" + clickedImgPersonNum;
-});
+});*/
 $(".natureSlides").on("click", function() {
   var clickedImgNatureStr = this.id.replace("pic", "");
   var clickedImgNatureNum = parseInt(clickedImgNatureStr);
