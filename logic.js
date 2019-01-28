@@ -50,10 +50,13 @@ $(".citySlides").on("click", function() {
   window.location.href = "personSlides.html?img=" + clickedImgPersonNum;
 });*/
 $(".natureSlides").on("click", function() {
-  var clickedImgNatureStr = this.id.replace("pic", "");
-  var clickedImgNatureNum = parseInt(clickedImgNatureStr);
+  
+  //var clickedImgNatureStr = this.id.replace("pic", "");
+  //var clickedImgNatureNum = parseInt(clickedImgNatureStr);
   console.log("Nature image was clicked from photo grid!");
-  window.location.href = "natureSlides.html?img=" + clickedImgNatureNum;
+  console.log(this.src);
+  var picNumForUrl = this.src.replace("https://picsum.photos/200/200/?image=", "");
+  window.location.href = "natureSlides.html?img=" + picNumForUrl;
 });
 
 });
