@@ -6,13 +6,21 @@ $(document).ready(function() {
  //When the powerpoint slides on the homepage are clicked, the user is routed to a collection of images
  //With the image cat of that image appearing first
  $(".cityFirst").on("click", function() {
-   console.log(" City Image was clicked!!!");
-   window.location.href = "cityFirst.html";
+  console.log("City Image was clicked!!!");
+  console.log(this.id);
+  var idInfo = this.id
+  var importantNumber = idInfo.replace("n", "");
+  console.log(importantNumber);
+  window.location.href = "cityFirst.html?img=" + importantNumber;
  });
 
  $(".personFirst").on("click", function() {
-  console.log(" Person Image was clicked!!!");
-  window.location.href = "personFirst.html";
+  console.log("Person Image was clicked!!!");
+  console.log(this.id);
+  var idInfo = this.id
+  var importantNumber = idInfo.replace("n", "");
+  console.log(importantNumber);
+  window.location.href = "personFirst.html?img=" + importantNumber;
 });
 
 $(".natureFirst").on("click", function() {
@@ -43,12 +51,12 @@ $(".citySlides").on("click", function() {
 });
 
 //These are for when someone clicks an image on the index carousel
-/*$(".personSlides").on("click", function() {
-  var clickedImgPersonStr = this.id.replace("pic", "");
-  var clickedImgPersonNum = parseInt(clickedImgPersonStr);
-  //console.log("image id : " + this.id);
-  window.location.href = "personSlides.html?img=" + clickedImgPersonNum;
-});*/
+$(".personSlides").on("click", function() {
+  console.log("Person image was clicked from photo grid!");
+  console.log(this.src);
+  var picNumForUrl = this.src.replace("https://picsum.photos/200/200/?image=", "");
+  window.location.href = "personSlides.html?img=" + picNumForUrl;
+});
 $(".natureSlides").on("click", function() {
   
   //var clickedImgNatureStr = this.id.replace("pic", "");
