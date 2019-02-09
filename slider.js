@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    console.log("ow OWWWW (;");
+    console.log("congrats u made it to the slider.js that opens the carousel u genius");
 //Pulls number of photo clicked
 var urlParams = new URLSearchParams(window.location.search);
 var myParam = urlParams.get('img');
