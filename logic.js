@@ -36,11 +36,10 @@ $(".natureFirst").on("click", function() {
 //They start on the image slide that matches what was clicked
 
 $(".citySlides").on("click", function() {
-  console.log("City image was clicked from photo grid!");
-  var clickedImgStr = this.id.replace("pic", "");
-  var clickedImgNum = parseInt(clickedImgStr);
-  window.location.href = "citySlides.html?img=" + clickedImgNum;
- // console.log(this.id.replace("pic", ""));
+  console.log("Person image was clicked from photo grid!");
+  console.log(this.src);
+  var picNumForUrl = this.src.replace("https://picsum.photos/200/200/?image=", "");
+  window.location.href = "citySlides.html?img=" + picNumForUrl;
 
 
   
