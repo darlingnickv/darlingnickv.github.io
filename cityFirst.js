@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var cityFirstArray = [1, 2, 3];
+    var cityFirstArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     //Pulls number of photo clicked
     var urlParams = new URLSearchParams(window.location.search);
     var myParam = urlParams.get('img');
