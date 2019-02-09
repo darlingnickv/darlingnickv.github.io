@@ -62,13 +62,25 @@ img:hover {
 
 }*/
 
+#prevW {
+    color: white !important;
+    overflow: visible !important;
+}
+#nextW {
+    color: white !important;
+    overflow: visible !important;
+}
 #prev {
-    color: red !important;
+    color: black !important;
     overflow: visible !important;
 }
 #next {
-    color:red !important;
+    color: black !important;
     overflow: visible !important;
+}
+
+.col-md-6 {
+    padding-top: 10px !important;
 }
 
 /* selected link */
