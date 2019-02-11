@@ -3,6 +3,10 @@ $(document).ready(function() {
 var urlParams = new URLSearchParams(window.location.search);
 var myParam = urlParams.get('img');
 console.log(myParam);
+  $(function() {
+    $('#carouselExampleControls').carousel(parseInt(myParam));
+    console.log("Opening Carousel");
+  });
 var natureFirstArray = [10, 11, 12, 13, 14, 15, 16, 17, 18];
 var myParamNum = parseInt(myParam);
 console.log("The number: " + myParamNum);

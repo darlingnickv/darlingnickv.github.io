@@ -30,11 +30,22 @@
     
     });*/
 
+
+
+  
+  
+ 
+
+
     $(document).ready(function() {
       //Pulls number of photo clicked
       var urlParams = new URLSearchParams(window.location.search);
       var myParam = urlParams.get('img');
       console.log(myParam);
+        $(function() {
+          $('#carouselExampleControls').carousel(parseInt(myParam));
+          console.log("Opening Carousel");
+      });
       var natureFirstArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
       var myParamNum = parseInt(myParam);
       console.log("The number: " + myParamNum);
