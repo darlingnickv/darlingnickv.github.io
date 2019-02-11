@@ -4,6 +4,10 @@ $(document).ready(function() {
     var urlParams = new URLSearchParams(window.location.search);
     var myParam = urlParams.get('img');
     console.log(myParam);
+      $(function() {
+        $('#carouselExampleControls').carousel(parseInt(myParam));
+        console.log("Opening Carousel");
+      });
     var personFirstArray = [19, 20, 21, 22, 23, 24, 25, 26, 27];
     var myParamNum = parseInt(myParam);
     console.log("The number: " + myParamNum);
