@@ -27,7 +27,7 @@ var pointer = (j + offset) % natureFirstArray.length;
 console.log("The array loop: " + natureFirstArray[pointer]);
 var srcNum = natureFirstArray[pointer];
 
-var srcUrl = "https://picsum.photos/600/600/?image=" + srcNum;
+var srcUrl = "photos/the-crack-in-everything/crack" + srcNum + ".jpg";
 $("#nSlide" + i).attr("src", srcUrl);
 $("#nSlide" + i).attr("data-imgNum", srcNum);
   }
