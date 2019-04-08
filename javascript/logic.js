@@ -52,7 +52,7 @@ $(".citySlides").on("click", function() {
 //These are for when someone clicks an image on the index carousel
 $(".personSlides").on("click", function() {
   console.log("Person image was clicked from photo grid!");
-  console.log(this.src);
+  console.log("This is the src:  " + this.src);
   var picNumForUrl = this.src.replace("https://picsum.photos/200/200/?image=", "");
   window.location.href = "personSlides.html?img=" + picNumForUrl;
 });
@@ -61,7 +61,7 @@ $(".natureSlides").on("click", function() {
   //var clickedImgNatureStr = this.id.replace("pic", "");
   //var clickedImgNatureNum = parseInt(clickedImgNatureStr);
   console.log("Nature image was clicked from photo grid!");
-  console.log(this.src);
+  console.log("This is the src: " + this.src);
   var picNumForUrl = this.src.replace("https://picsum.photos/200/200/?image=", "");
   window.location.href = "natureSlides.html?img=" + picNumForUrl;
 });

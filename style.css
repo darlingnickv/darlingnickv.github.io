@@ -42,25 +42,9 @@ footer{
 #bio {
 color: black;
 }
-/*.flex-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center space-around;
-  }*/
-img {
-    padding-bottom: 10px;
-}
 img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
-/*.carousel-inner .carousel-item img {
-    margin:0 auto;
-}
-.carousel-control-prev-icon {
-    color: red !important;
-    background-color: red !important;
-
-}*/
 
 #prevW {
     color: white !important;
@@ -83,31 +67,21 @@ img:hover {
     padding-top: 10px !important;
 }
 
-/* selected link */
-/*a:active {
-    color: yellow;
+.col-md-2 {
+text-align: center;
 }
 
+.natureSlides {
+    /* max-height: 200px;
+    max-width: 250px; */
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 5px;
+    display: block; 
+     justify-content: center !important;
+    align-content: center !important;
+    text-align: center !important; 
 
-a:link {
-    color: green;
 }
-
-
-a:visited {
-    color: green;
-}
-
-
-a:hover {
-    color: red;
-}
-
-
-a:active {
-    color: yellow;
-}
-*/
-
-
 
