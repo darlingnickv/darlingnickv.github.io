@@ -4,8 +4,10 @@ var urlParams = new URLSearchParams(window.location.search);
 var myParam = urlParams.get('img');
 console.log("This is myParam: " + myParam);
 var myNewParam = myParam.replace("file:///C:/Users/Morgan/Desktop/coding/freelance/nick_portfolio/darlingnickv.github.io/photos/the-crack-in-everything/crack", "");
-console.log("This is the new param: " + myNewParam);
-var myFinalParamNum = myNewParam.replace('.jpg', '');
+var myNewestParam = myParam.replace("https://darlingnickv.github.io/photos/the-crack-in-everything/crack", "");
+
+console.log("This is the new param: " + myNewestParam);
+var myFinalParamNum = myNewestParam.replace('.jpg', '');
 console.log("This is the final param: " + myFinalParamNum);
   $(function() {
     $('#carouselExampleControls').carousel(parseInt(myFinalParamNum));
