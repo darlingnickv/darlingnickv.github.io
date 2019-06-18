@@ -13,7 +13,7 @@ console.log("This is the final param: " + myFinalParamNum);
     $('#carouselExampleControls').carousel(parseInt(myFinalParamNum));
     console.log("Opening Carousel");
   });
-var natureFirstArray = [10, 11, 12, 13, 14, 15, 16, 17, 18];
+var natureFirstArray = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29];
 var myParamNum = parseInt(myFinalParamNum);
 console.log("The number: " + myParamNum);
 //finds the index number of the matching value in the natureFirstArray
