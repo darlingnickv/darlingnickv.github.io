@@ -87,4 +87,19 @@ text-align: center;
     text-align: center !important; 
 
 }
+.carousel-inner-nature {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.carousel-control-next-nature, .carousel-control-prev-nature {
+    width: 10%;
+}
+
+/* #carouselExampleControls {
+
+} */
+
+
 
